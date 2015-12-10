@@ -156,7 +156,7 @@ public class MainProgram {
 		{
 			if(members.get(i).getAccount().contains(account))
 			{
-				StdOut.println("What would you like to edit about your account?");
+				StdOut.println("I don't know why, but what would you like to edit about your account?");
 				StdOut.println("1. Name.");
 				StdOut.println("2. Username.");
 				int choice = StdIn.readInt();
@@ -172,14 +172,14 @@ public class MainProgram {
 					StdOut.println("Please enter the new last name.");
 					String newLastName = StdIn.readString();
 					members.get(i).setName(newFirstName, newLastName);
-					StdOut.println("Your name has been changed to " + newFirstName + " " + newLastName);
+					StdOut.println("Congratulations. Your name has been changed to " + newFirstName + " " + newLastName);
 				}
 				if(choice == 2)
 				{
 					StdOut.println("Please enter the new username.");
 					String newUsername = StdIn.readString();
 					members.get(i).setAccount(newUsername);;
-					StdOut.println("Your username has been changed to " + newUsername);
+					StdOut.println("Congratulations. Your username has been changed to " + newUsername);
 				}
 			}
 		}
@@ -194,7 +194,7 @@ public class MainProgram {
 				if(members.get(i).getAccount().contains(account))
 				{
 					members.remove(i);
-					StdOut.println("User removed: " + account);
+					StdOut.println("User removed: " + account + ". They shall be missed.");
 				}
 			}
 		}
